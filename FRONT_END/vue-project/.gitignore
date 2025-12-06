@@ -1,0 +1,41 @@
+# --- HỆ THỐNG & EDITOR ---
+.DS_Store
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# --- DEPENDENCIES (Thư viện - Không bao giờ up lên git) ---
+node_modules/
+**/node_modules/
+
+# --- LOGS ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- FRONTEND (VUE.JS) ---
+/dist
+/FRONT_END/dist
+.env.local
+.env.*.local
+
+# --- BACKEND (NODE.JS) ---
+# Quan trọng: Không up file chứa mật khẩu DB
+.env
+BACK_END/.env
+
+# --- UPLOAD ẢNH (QUAN TRỌNG) ---
+# Chúng ta không up ảnh sách do user test lên Git
+# Nhưng vẫn giữ lại thư mục uploads
+uploads/*
+BACK_END/uploads/*
+!BACK_END/uploads/.gitkeep
+
+# --- KHÁC ---
+coverage/
+.nyc_output/

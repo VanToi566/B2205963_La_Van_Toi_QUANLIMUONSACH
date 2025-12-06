@@ -1,0 +1,21 @@
+# 1. BỎ QUA THƯ VIỆN (QUAN TRỌNG - GIẢM DUNG LƯỢNG)
+node_modules/
+**/node_modules/
+
+# 2. BỎ QUA BẢO MẬT (QUAN TRỌNG - KHÔNG ĐƯỢC UP FILE NÀY)
+.env
+**/.env
+
+# 3. BỎ QUA FILE RÁC HỆ THỐNG
+.DS_Store
+*.log
+
+# 4. BỎ QUA DỮ LIỆU NGƯỜI DÙNG (ẢNH UPLOAD)
+uploads/
+**/uploads/
+# Giữ lại file .gitkeep nếu có để giữ cấu trúc thư mục
+!**/uploads/.gitkeep
+
+# 5. BỎ QUA FILE BUILD (FRONTEND)
+dist/
+**/dist/
